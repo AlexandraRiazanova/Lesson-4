@@ -18,25 +18,25 @@
 
 // // Запросить у пользователя значение, кратное которому будут выводиться числа - вывести их в консоль.
 
-// let n = parseInt(prompt("Укажите число"))
+// let n = parseInt(prompt("Укажите число"));
+// let arr = [];
 
-// for(let i = 0; i<= 100; i++){
+// for(let i = 0; i <= 100; i++){
 //     if(i % n == 0){
-//         console.log(i)        
+//         arr.push(i)        
 //     }
 // }
+// console.log(arr)
 
 // (Усложняем) Кроме кратного запросить количество чисел, которые следует вывести
 
 let a = parseInt(prompt("Укажите число"));
 let b = parseInt(prompt("Укажите количество чисел, которые нужно вывести"));
-let count = 0;
+let array = [];
 
-for(let j = 0; j<= 100; j++){
-    do{
-        if(j % a == 0){
-            console.log(j);           
-        }
-        count++;
-    }while(count <= b);
+for(let j = 0; j <= 100; j++){
+    if(j % a == 0){
+        array.push(j)        
+    }
 }
+console.log(array)
